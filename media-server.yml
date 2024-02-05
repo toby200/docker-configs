@@ -37,7 +37,7 @@ services:
       - PUID=${UID}
       - PGID=${GID}
       - TZ=${TZ}  
-      - JELLYFIN_PublishedServerUrl=${HOST_IP}
+      - JELLYFIN_PublishedServerUrl=${HOSTNAME}
     volumes:
       - ${DATA}:/data
       - ${CONFIG_HOME}/jellyfin/config:/config
